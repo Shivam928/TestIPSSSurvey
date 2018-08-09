@@ -29,20 +29,18 @@ out of six</b> answers indicating increasing severity of the particular symptom.
 <head>
   <meta charset="UTF-8">
  <title>I-PSS Survey</title>
-  
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
   
       <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
       @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
-
 body {
-  background: skyblue;
+  background: Khaki;
   padding: 40px;
-  font-family: "Open Sans Condensed", sans-serif;
+ font-family:verdana;
 }
-
 #bg {
   position: fixed;
   left: 0;
@@ -53,7 +51,6 @@ body {
   background-size: cover;
   -webkit-filter: blur(5px);    
 }
-
 form {
   position: relative;
   width: 250px;
@@ -66,7 +63,6 @@ form {
   border-bottom-color: rgba(60,60,60,.4);
   border-right-color: rgba(60,60,60,.4);
 }
-
 form input, form button {
   width: 212px;
   border: 1px solid;
@@ -83,19 +79,14 @@ form input, form button {
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
   margin-bottom: 19px;
 }
-
 form input:focus { background-color: rgba(0,0,0,.4); }
-
-
 form input.pass {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAYAAAC9QufkAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0YwNDIzMTQ3QzIzMTFFMjg3Q0VFQzhDNTgxMTRCRTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0YwNDIzMTU3QzIzMTFFMjg3Q0VFQzhDNTgxMTRCRTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozRjA0MjMxMjdDMjMxMUUyODdDRUVDOEM1ODExNEJFNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozRjA0MjMxMzdDMjMxMUUyODdDRUVDOEM1ODExNEJFNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsOChsgAAADUSURBVHjaYvz///9JBgYGMwbSwSkGoOafQPwKiAOBmIEIHAXED0H6QJwPQGwAxE+AOJOAxnwgvgfEKiB9MM0gWg6IbwNxIw6NXUB8HogloHwUzSAsBAoDIJ4DxMxQMRA9H4gPADE/kloMzSCsBcR/gHgj1LAt0HBRR1P3gQktBA2AeBcQZwHxCyB+AsT3gTgFKq6FohrJZnssoW6AxPaDBqoZurP9oBrtCYS2ExA/h9JgzX+gAsZExrMZVP0fmGZ1IjWiBCoL0NsXgPgGGcnzLECAAQD5y8iZ2Z69IwAAAABJRU5ErkJggg==);
   background-position: 220px 10px;
 }
-
 ::-webkit-input-placeholder { color: #ccc; text-transform: uppercase; }
 ::-moz-placeholder { color: #ccc; text-transform: uppercase; }
 :-ms-input-placeholder { color: #ccc; text-transform: uppercase; }
-
 form button[type=submit] {
   width: 248px;
   margin-bottom: 0;
@@ -110,6 +101,7 @@ form button[type=submit] {
   border-right-color: #1e4d4e;
   cursor: pointer;
 }
+
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -117,15 +109,20 @@ form button[type=submit] {
 </head>
 
 <body>
-  <h1 style="font-family:arial;">I-PSS</h1>
-<p>
+  <div style="background-color: grey;width: 240px;margin-left: 40%;height: 36px;">
+  	<center><h1 style="font-family:arial; font-size: 36px;text-align: center;">I-PSS</h1></center>
+  </div>
+  <br/><br/>
+<p style="font-size: 25px;border-style: solid;border-width: 5px;">
 The <b>International Prostate Symptom Score</b> is based on the answers 
 to seven questions concerning urinary symptoms and one question concerning
-quality of life.<br />
+quality of life.</p>
+<br/><br/>
+<p style="font-size: 25px;border-style: solid;border-width: 5px;">
 Each question concerning urinary symptom allows the patient to choose <b>one
 out of six</b> answers indicating increasing severity of the particular symptom.</p>
 </br>
-  <legend> <marquee><b>Fill up the following and start your survey</b></marquee> </legend>
+ <marquee  style="font-size: 25px;color: red;"><b>Fill up the following and start your survey</b></marquee>
 </br>
 </br>
 
