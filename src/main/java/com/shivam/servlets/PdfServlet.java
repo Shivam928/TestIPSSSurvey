@@ -129,7 +129,7 @@ String r8=(String)se.getAttribute("Ques8");
 Integer que8=Integer.parseInt(r8);
 int h=que8.intValue();
 
-int tot=a+b+c+d+e+f+g+h;
+int tot=a+b+c+d+e+f+g;
 String msg1="As per your survey,the score calculated by us is "+tot;
 
 	document.add(table);
