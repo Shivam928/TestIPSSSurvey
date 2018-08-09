@@ -133,11 +133,11 @@ public class DisplayServlet extends HttpServlet {
 				out.println("</table>");
 				out.println("</form>");
 				out.println("<br><br>");
-				out.println("<strong>YOUR SCORE : "+(a+b+c+d+e+f+g+h)+"</strong>");
+				out.println("<strong>YOUR SCORE : "+(a+b+c+d+e+f+g)+"</strong>");
 				
 				out.println("</center>");
 				out.println("<br><br><br><br><br>");
-				int tot=a+b+c+d+e+f+g+h;
+				int tot=a+b+c+d+e+f+g;
 				session.setAttribute("Score",tot);
 				req.setAttribute("Score",tot);
 				out.println("<footer>");
@@ -154,7 +154,7 @@ public class DisplayServlet extends HttpServlet {
 			}
 		out.println("</body></html>");
 		}
-		//session.invalidate();        // --> We'll do this or not?
+		//session.invalidate();      
 		
 	}
 
