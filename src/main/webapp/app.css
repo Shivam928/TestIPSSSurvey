@@ -23,12 +23,12 @@ input[type=submit] {
   background-color: #3498db;
   color: #fff;
   font-size:100%; 
-  height:4%;
+  height:3%;
 }
 input[type=text] {
   background-color: #f1f1f1;
   font-family: 'Concert One', cursive;
-
+  height:3.5%
   font-size: 100%;
 }
 input[type=email] {
